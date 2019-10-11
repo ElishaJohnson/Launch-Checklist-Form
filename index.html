@@ -1,15 +1,14 @@
 <!DOCTYPE>
 <html>
     <head>
+        <meta charset="utf-8">
         <title>Launch Checklist</title>
         <link rel = "stylesheet" type = "text/css" href = "styles.css" />
         <script src = "script.js"></script>
     </head>
     <body>
         <h1>Launch Checklist Form</h1>
-        <div id="missionTarget">
-            <!-- Fetch some planetary data -->
-        </div> 
+        <div id="missionTarget"></div> 
         <div id="launchForm">
             <form>
                 <div style="display:flex; flex-direction: row; justify-content: center; align-items: center; margin: 8 0;">
@@ -19,10 +18,10 @@
                     <label>Co-pilot Name <input type="text" name="copilotName"/></label>
                 </div>
                 <div style="display:flex; flex-direction: row; justify-content: center; align-items: center; margin: 8 0;">
-                    <label>Fuel Level (gal) <input type="text" name="fuelLevel"/></label> 
+                    <label>Fuel Level (gal) <input type="number" min="0" value="0" name="fuelLevel"/></label> 
                 </div>
                 <div style="display:flex; flex-direction: row; justify-content: center; align-items: center; margin: 8 0;">
-                    <label>Cargo Weight (lbs) <input type="text" name="cargoWeight"/></label>
+                    <label>Cargo Weight (lbs) <input type="number" min="0" value="0" name="cargoWeight"/></label>
                 </div>
                 <button id="formSubmit">Submit</button>
             </form>
